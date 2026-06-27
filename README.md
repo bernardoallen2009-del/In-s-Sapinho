@@ -9,6 +9,8 @@ npm run build
 npm run serve
 ```
 
+O build gera a pasta `public/`, que é a pasta configurada para deploy na Vercel.
+
 O conteúdo principal está centralizado em `src/data/profile.ts`.  
 Os componentes de renderização estão em `src/components/site.ts`.
 
