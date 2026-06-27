@@ -1,0 +1,10 @@
+{
+  "name": "ines-sapinho-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-site.ts",
+    "serve": "python3 -m http.server 4173"
+  }
+}
