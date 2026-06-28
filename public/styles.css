@@ -133,15 +133,6 @@ button {
   font-size: clamp(1.15rem, 1.9vw, 1.5rem);
 }
 
-.brand small {
-  max-width: 260px;
-  color: var(--muted);
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  line-height: 1.25;
-  text-transform: uppercase;
-}
-
 .site-nav {
   display: flex;
   align-items: center;
@@ -546,34 +537,6 @@ p {
   display: flex;
   justify-content: center;
   margin-top: 28px;
-}
-
-.cta-section {
-  background: var(--accent-dark);
-  color: rgba(255, 255, 255, 0.78);
-}
-
-.cta-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 28px;
-}
-
-.cta-box h2,
-.cta-box .kicker {
-  color: white;
-}
-
-.cta-box p:not(.kicker) {
-  max-width: 680px;
-  margin-top: 16px;
-}
-
-.cta-box .button-primary {
-  color: var(--accent-dark);
-  background: white;
-  border-color: white;
 }
 
 .page-hero {
@@ -1135,10 +1098,6 @@ p {
     gap: 12px;
   }
 
-  .brand small {
-    display: none;
-  }
-
   .header-actions .button {
     min-height: 38px;
     padding: 0 12px;
@@ -1166,8 +1125,7 @@ p {
     font-size: clamp(2rem, 10vw, 3rem);
   }
 
-  .hero-actions,
-  .cta-box {
+  .hero-actions {
     align-items: stretch;
     flex-direction: column;
   }

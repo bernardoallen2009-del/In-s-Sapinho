@@ -171,7 +171,6 @@ function renderHeader(active: PageKey, p: Profile): string {
       <div class="container header-inner">
         <a class="brand" href="index.html" aria-label="${escapeHtml(p.name)}">
           <span>${escapeHtml(p.name)}</span>
-          <small>${escapeHtml(p.specialty)}</small>
         </a>
         <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
           ${links}
@@ -412,16 +411,6 @@ function renderHome(p: Profile): string {
         </div>
       </section>
 
-      <section class="section cta-section">
-        <div class="container cta-box reveal">
-          <div>
-            <p class="kicker">CUF</p>
-            <h2>Marcação através dos canais oficiais</h2>
-            <p>A disponibilidade, horários, acordos e condições de marcação devem ser confirmados diretamente no site oficial da CUF.</p>
-          </div>
-          <a class="button button-primary" href="marcacao.html">Marcar consulta</a>
-        </div>
-      </section>
     `
   });
 }
