@@ -556,7 +556,12 @@ p {
 }
 
 .page-hero-copy h1 {
-  max-width: 12ch;
+  max-width: 780px;
+  font-size: clamp(3rem, 4.7vw, 4.25rem);
+  line-height: 1.02;
+  overflow-wrap: normal;
+  text-wrap: balance;
+  word-break: normal;
 }
 
 .page-hero-copy p:not(.kicker) {
