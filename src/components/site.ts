@@ -154,6 +154,7 @@ function renderHeader(active: PageKey, p: Profile): string {
         </a>
         <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
           ${links}
+          <a class="mobile-nav-cta" href="marcacao.html">Marcar consulta</a>
         </nav>
         <div class="header-actions">
           <a class="button button-primary button-small" href="marcacao.html">Marcar consulta</a>

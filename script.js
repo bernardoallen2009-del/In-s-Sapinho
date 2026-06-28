@@ -21,8 +21,25 @@
       link.addEventListener("click", closeMenu);
     });
 
+    document.addEventListener("pointerdown", (event) => {
+      if (
+        nav.classList.contains("is-open") &&
+        event.target instanceof Node &&
+        !nav.contains(event.target) &&
+        !navToggle.contains(event.target)
+      ) {
+        closeMenu();
+      }
+    });
+
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {
+        closeMenu();
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.matchMedia("(min-width: 1121px)").matches) {
         closeMenu();
       }
     });
