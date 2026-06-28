@@ -562,6 +562,112 @@ export const profile = {
       url: "https://open.spotify.com/show/6rczAnlJCFowHtVmiQ3rMx"
     }
   ],
+  certificates: [
+    {
+      title: "Lifestyle Medicine: Tools for Promoting Healthy Change",
+      institution: "Harvard Medical School",
+      year: "2022",
+      meta: "Formação médica contínua · 20.25 AMA PRA Category 1 Credits",
+      image: "images/certificados/harvard-lifestyle-medicine.jpg"
+    },
+    {
+      title: "Healthcare Leadership Program",
+      institution: "Nova SBE Executive Education / CUF",
+      year: "2023",
+      meta: "Programa presencial · 51 horas",
+      image: "images/certificados/nova-sbe-healthcare-leadership.jpg"
+    },
+    {
+      title: "First Annual Conference in Menopause and Healthy Aging",
+      institution: "Stanford Medicine",
+      year: "2025",
+      meta: "Formação médica contínua · Menopausa e envelhecimento saudável",
+      image: "images/certificados/stanford-menopause-healthy-aging.jpg"
+    }
+  ],
+  externalFeatures: [
+    {
+      title: "10% dos portugueses sofrem patologia da tiroide",
+      source: "Raio X",
+      type: "Entrevista",
+      year: "2018",
+      topic: "Tiroide",
+      text:
+        "Entrevista sobre prevalência de patologia tiroideia, sintomas e literacia em saúde.",
+      url:
+        "https://raiox.pt/2018/04/07/10-dos-portugueses-sofrem-patologia-da-tiroide-afirma-ines-sapinho-medica-endocrinologista/",
+      image: "https://raiox.pt/wp-content/uploads/2018/04/IMG_3066-2.png"
+    },
+    {
+      title: "Dra. Inês Sapinho",
+      source: "Saúde Online",
+      type: "Arquivo / tag",
+      year: "",
+      topic: "Endocrinologia",
+      text:
+        "Página agregadora com conteúdos relacionados com a Dra. Inês Sapinho.",
+      url: "https://saudeonline.pt/tag/dra-ines-sapinho/",
+      image:
+        "https://saudeonline.pt/wp-content/uploads/2020/05/ines-sapinho-e1610991529381-320x202.jpg"
+    },
+    {
+      title: "Hormonas femininas: conheça-as e perceba como influenciam o seu corpo",
+      source: "Saber Viver",
+      type: "Artigo",
+      year: "2021",
+      topic: "Hormonas femininas",
+      text:
+        "Conteúdo de literacia sobre o papel das hormonas femininas e o seu impacto em diferentes fases da vida.",
+      url: "https://www.saberviver.pt/bem-estar/saude/hormonas-femininas/",
+      image: "https://www.saberviver.pt/wp-content/uploads/2021/04/medica-ines-sapinho.jpg"
+    },
+    {
+      title: "Os Segredos da Sua Tiroide",
+      source: "ADTI",
+      type: "Livro / divulgação",
+      year: "2019",
+      topic: "Tiroide",
+      text:
+        "Destaque ao livro de divulgação médica sobre tiroide, publicado pela Manuscrito Editora.",
+      url: "https://adti.pt/2019/08/26/os-segredos-da-sua-tiroide/",
+      image: "https://adti.pt/wp-content/uploads/2019/08/23-8_Adti-blog.jpg"
+    },
+    {
+      title: "Tumor na glândula-mãe: sinais de alerta",
+      source: "SAPO",
+      type: "Artigo",
+      year: "",
+      topic: "Hipófise",
+      text:
+        "Conteúdo sobre sinais de alerta associados à hipófise, referido pelo utilizador para integrar em destaques.",
+      url:
+        "https://sapo.pt/artigo/tumor-na-glandula-mae-sinais-de-alerta-8c74-68b0e1cec2585a9afe61e292",
+      image: ""
+    },
+    {
+      title: "Sociedade Civil",
+      source: "RTP Play",
+      type: "Televisão",
+      year: "2022",
+      topic: "Divulgação médica",
+      text:
+        "Participação em formato televisivo de divulgação e debate em saúde.",
+      url: "https://www.rtp.pt/play/p9731/e623586/sociedade-civil",
+      image: ""
+    },
+    {
+      title: "Vida inteligente para uma longevidade saudável",
+      source: "Diário de Notícias",
+      type: "Artigo",
+      year: "2023",
+      topic: "Longevidade saudável",
+      text:
+        "Artigo sobre saúde, envelhecimento e decisões informadas para uma longevidade saudável.",
+      url:
+        "https://www.dn.pt/arquivo/diario-de-noticias/vida-inteligente-para-uma-longevidade-saudavel-15967629.html",
+      image: ""
+    }
+  ],
   medicalDisclaimer:
     "A informação presente neste site tem caráter informativo e não substitui consulta médica individualizada. Em caso de sintomas ou dúvidas clínicas, deve procurar aconselhamento médico."
 } as const;

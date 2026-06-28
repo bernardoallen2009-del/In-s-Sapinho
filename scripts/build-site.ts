@@ -1,11 +1,11 @@
 import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { profile } from "../src/data/profile.ts";
-import { renderLegalPage, renderPage } from "../src/components/site.ts";
+import { renderLegalPage, renderSitePages } from "../src/components/site.ts";
 
 const outputDir = "public";
 
 const pages = {
-  "index.html": renderPage(profile),
+  ...renderSitePages(profile),
   "privacidade.html": renderLegalPage("privacidade", profile),
   "cookies.html": renderLegalPage("cookies", profile),
   "termos.html": renderLegalPage("termos", profile)
