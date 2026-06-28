@@ -376,17 +376,12 @@ function renderHome(p: Profile): string {
       </section>
 
       <section class="section home-intro">
-        <div class="container split-grid">
-          <div class="reveal">
+        <div class="container narrow">
+          <div class="copy-stack reveal">
             ${sectionIntro("Sobre Mim", "Endocrinologia com presença clínica e literacia em saúde")}
             <p>${escapeHtml(p.about[0])}</p>
             <p>${escapeHtml(p.about[1])}</p>
             <a class="text-link" href="sobre.html">Ler percurso completo</a>
-          </div>
-          <div class="metric-panel reveal">
-            <span>OM ${escapeHtml(p.orderNumber)}</span>
-            <span>${escapeHtml(p.mainUnit)}</span>
-            <span>Português e Inglês</span>
           </div>
         </div>
       </section>
@@ -430,9 +425,6 @@ function renderHome(p: Profile): string {
 }
 
 function renderAboutPage(p: Profile): string {
-  const facts = p.quickFacts
-    .map(([label, value]) => `<dl><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></dl>`)
-    .join("");
   const mission = p.mission.cards
     .map(
       (item, index) => `
@@ -459,14 +451,10 @@ function renderAboutPage(p: Profile): string {
         imageAlt: "Retrato editorial da Dra. Inês Sapinho"
       })}
       <section class="section">
-        <div class="container split-grid">
-          <div class="copy-stack reveal">
+        <div class="container narrow">
+          <div class="copy-stack copy-stack-large reveal">
             ${p.about.map((text) => `<p>${escapeHtml(text)}</p>`).join("")}
           </div>
-          <aside class="fact-panel reveal">
-            <h2>Dados rápidos</h2>
-            ${facts}
-          </aside>
         </div>
       </section>
       <section class="section section-muted">

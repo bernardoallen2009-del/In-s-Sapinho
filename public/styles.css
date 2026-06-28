@@ -485,27 +485,6 @@ p {
   margin-top: 10px;
 }
 
-.metric-panel {
-  display: grid;
-  gap: 12px;
-  padding: 24px;
-  background: #eef3ef;
-  border: 1px solid rgba(21, 35, 38, 0.08);
-  border-radius: var(--radius);
-}
-
-.metric-panel span {
-  padding-bottom: 12px;
-  border-bottom: 1px solid rgba(21, 35, 38, 0.09);
-  color: var(--ink-soft);
-  font-weight: 680;
-}
-
-.metric-panel span:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-
 .cards-grid,
 .feature-grid,
 .certificate-grid,
@@ -522,7 +501,6 @@ p {
 .content-card,
 .principle-card,
 .feature-card,
-.fact-panel,
 .society-item,
 .certificate-card {
   background: rgba(255, 255, 255, 0.78);
@@ -631,19 +609,6 @@ p {
   object-position: center;
 }
 
-.fact-panel {
-  padding: 26px;
-  box-shadow: var(--shadow-soft);
-}
-
-.fact-panel h2 {
-  margin-bottom: 16px;
-  font-family: var(--sans);
-  font-size: 1.08rem;
-  font-weight: 760;
-}
-
-.fact-panel dl,
 .book-details dl {
   display: grid;
   gap: 3px;
@@ -652,7 +617,6 @@ p {
   border-top: 1px solid rgba(21, 35, 38, 0.08);
 }
 
-.fact-panel dt,
 .book-details dt {
   color: var(--muted);
   font-size: 0.78rem;
@@ -661,7 +625,6 @@ p {
   text-transform: uppercase;
 }
 
-.fact-panel dd,
 .book-details dd {
   margin: 0;
   color: var(--ink-soft);
@@ -1245,8 +1208,7 @@ p {
   .content-card,
   .principle-card,
   .feature-body,
-  .appointment-card,
-  .fact-panel {
+  .appointment-card {
     padding: 20px;
   }
 }

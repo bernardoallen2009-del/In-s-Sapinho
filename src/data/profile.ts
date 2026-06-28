@@ -75,15 +75,6 @@ export const profile = {
     "Ao longo do seu percurso, tem desenvolvido trabalho clínico e científico em áreas como doenças da tiroide e paratiróide, obesidade, diabetes, menopausa, patologia da hipófise e da suprarrenal. A sua prática clínica combina avaliação médica rigorosa, atualização científica e comunicação clara com cada pessoa.",
     "Tem atividade assistencial no Hospital CUF Descobertas — Lisboa e percurso hospitalar em Endocrinologia, incluindo coordenação de unidades clínicas."
   ],
-  quickFacts: [
-    ["Especialidade", "Endocrinologia"],
-    ["Ordem dos Médicos", "37583"],
-    ["Idiomas", "Português e Inglês"],
-    ["Unidade principal", "Hospital CUF Descobertas — Lisboa"],
-    ["Consultas", "Diabetes, Endocrinologia, Tiroide e Menopausa"],
-    ["Teleconsulta", "Endocrinologia e Menopausa através da CUF"],
-    ["Diferenciação", "Tiroide, Paratiróide, Obesidade, Menopausa, Hipófise e Suprarrenal"]
-  ],
   mission: {
     intro:
       "A Endocrinologia acompanha doenças que podem ter impacto no metabolismo, no peso, na glicose, na energia, no ciclo hormonal, na saúde óssea e em múltiplos sistemas do organismo. A avaliação deve ser rigorosa, mas também compreensível para a pessoa.",
