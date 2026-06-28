@@ -347,24 +347,29 @@ p {
 
 .home-hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.96fr) minmax(330px, 0.72fr);
+  grid-template-columns: minmax(0, 0.98fr) minmax(330px, 0.74fr);
   grid-template-rows: auto auto;
-  align-items: center;
-  gap: 22px clamp(36px, 6vw, 86px);
+  align-items: start;
+  gap: 34px clamp(36px, 6vw, 86px);
   min-height: calc(100vh - 118px);
 }
 
-.hero-card {
-  max-width: 720px;
+.hero-title {
+  grid-column: 1 / -1;
+  max-width: 100%;
 }
 
-.hero-card h1 {
-  max-width: 10ch;
+.hero-title h1 {
+  max-width: none;
+  white-space: nowrap;
+}
+
+.hero-card {
+  max-width: 700px;
 }
 
 .hero-lead {
   max-width: 660px;
-  margin-top: 24px;
   color: var(--ink-soft);
   font-family: var(--serif);
   font-size: clamp(1.34rem, 2.2vw, 2rem);
@@ -385,11 +390,16 @@ p {
   margin-top: 30px;
 }
 
+.hero-card .appointment-card {
+  max-width: 100%;
+  margin-top: 32px;
+}
+
 .hero-portrait {
-  grid-row: 1 / 3;
+  grid-row: 2;
   grid-column: 2;
   justify-self: end;
-  width: min(100%, 500px);
+  width: min(100%, 520px);
   margin: 0;
   overflow: hidden;
   border: 1px solid rgba(21, 35, 38, 0.08);
@@ -1085,6 +1095,10 @@ p {
     min-height: auto;
   }
 
+  .hero-title {
+    grid-column: auto;
+  }
+
   .hero-portrait {
     grid-row: auto;
     grid-column: auto;
@@ -1138,6 +1152,10 @@ p {
 
   .home-hero {
     padding: 42px 0 66px;
+  }
+
+  .hero-title h1 {
+    font-size: 3.2rem;
   }
 
   h1 {
@@ -1203,6 +1221,10 @@ p {
     max-width: 136px;
     line-height: 1.15;
     text-align: center;
+  }
+
+  .hero-title h1 {
+    font-size: 2.45rem;
   }
 
   .content-card,

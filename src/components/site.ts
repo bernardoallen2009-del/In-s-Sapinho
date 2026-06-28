@@ -358,20 +358,22 @@ function renderHome(p: Profile): string {
     body: `
       <section class="home-hero">
         <div class="container home-hero-grid">
-          <div class="hero-card reveal">
+          <div class="hero-title reveal">
             <p class="kicker">${escapeHtml(p.eyebrow)}</p>
             <h1>${escapeHtml(p.name)}</h1>
+          </div>
+          <div class="hero-card reveal">
             <p class="hero-lead">${escapeHtml(p.tagline)}</p>
             <p>${escapeHtml(p.intro)}</p>
             <div class="hero-actions">
               <a class="button button-primary" href="marcacao.html">Marcar consulta</a>
               <a class="button button-secondary" href="sobre.html">Conhecer percurso clínico</a>
             </div>
+            ${renderAppointmentPanel(p)}
           </div>
           <figure class="hero-portrait reveal">
             <img src="${escapeHtml(p.images.portrait)}" alt="Retrato profissional da Dra. Inês Sapinho" width="600" height="600">
           </figure>
-          ${renderAppointmentPanel(p)}
         </div>
       </section>
 
@@ -562,9 +564,7 @@ function renderCongressPage(p: Profile): string {
       ${renderPageHero({
         kicker: "Congressos e Eventos",
         title: "Formação contínua e atualização científica",
-        text: "Percurso académico, formação complementar, sociedades científicas e certificados relevantes.",
-        image: "images/certificados/stanford-menopause-healthy-aging.jpg",
-        imageAlt: "Certificado Stanford Medicine"
+        text: "Percurso académico, formação complementar, sociedades científicas e certificados relevantes."
       })}
       <section class="section">
         <div class="container">
