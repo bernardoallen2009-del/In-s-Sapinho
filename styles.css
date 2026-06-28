@@ -582,6 +582,43 @@ p {
   object-position: center;
 }
 
+.about-hero {
+  padding: clamp(64px, 8vw, 108px) 0;
+  background: linear-gradient(180deg, var(--paper), #fbf7f1);
+}
+
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.54fr);
+  gap: clamp(34px, 6vw, 82px);
+  align-items: start;
+}
+
+.about-copy {
+  max-width: 780px;
+}
+
+.about-copy .kicker {
+  margin-bottom: 34px;
+}
+
+.about-portrait {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(21, 35, 38, 0.08);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.about-portrait img {
+  width: 100%;
+  aspect-ratio: 1.02;
+  object-fit: cover;
+  object-position: center;
+}
+
 .book-details dl {
   display: grid;
   gap: 3px;
@@ -1047,6 +1084,7 @@ p {
   }
 
   .home-hero-grid,
+  .about-hero-grid,
   .page-hero-grid,
   .split-grid,
   .book-grid,

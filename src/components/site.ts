@@ -434,18 +434,17 @@ function renderAboutPage(p: Profile): string {
     active: "sobre",
     p,
     body: `
-      ${renderPageHero({
-        kicker: "Sobre Mim",
-        title: p.name,
-        text: "Percurso clínico, prática assistencial e comunicação médica clara em Endocrinologia.",
-        image: p.images.editorial,
-        imageAlt: "Retrato editorial da Dra. Inês Sapinho"
-      })}
-      <section class="section">
-        <div class="container narrow">
-          <div class="copy-stack copy-stack-large reveal">
-            ${p.about.map((text) => `<p>${escapeHtml(text)}</p>`).join("")}
+      <section class="about-hero">
+        <div class="container about-hero-grid">
+          <div class="about-copy reveal">
+            <p class="kicker">Sobre Mim</p>
+            <div class="copy-stack copy-stack-large">
+              ${p.about.map((text) => `<p>${escapeHtml(text)}</p>`).join("")}
+            </div>
           </div>
+          <figure class="about-portrait reveal">
+            <img src="${escapeHtml(p.images.editorial)}" alt="Retrato editorial da Dra. Inês Sapinho" loading="eager">
+          </figure>
         </div>
       </section>
       <section class="section section-muted">
