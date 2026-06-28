@@ -10,8 +10,6 @@ type PageKey =
   | "destaques"
   | "marcacao";
 
-type LegalKey = "privacidade" | "cookies" | "termos";
-
 type Feature = Profile["externalFeatures"][number];
 type Publication = Profile["publications"][number];
 
@@ -23,24 +21,6 @@ const navItems: Array<{ key: PageKey; label: string; href: string }> = [
   { key: "publicacoes", label: "Publicações", href: "publicacoes.html" },
   { key: "destaques", label: "Destaques", href: "destaques.html" }
 ];
-
-const legalPages: Record<LegalKey, { title: string; text: string }> = {
-  privacidade: {
-    title: "Política de Privacidade",
-    text:
-      "Antes da publicação, esta política deve ser adaptada ao domínio final, formulários, ferramentas de analytics, cookies e eventuais integrações externas."
-  },
-  cookies: {
-    title: "Política de Cookies",
-    text:
-      "Antes da publicação, deve ser confirmada a utilização real de cookies, pixels, analytics ou embeds de terceiros."
-  },
-  termos: {
-    title: "Termos de Utilização",
-    text:
-      "Antes da publicação, os termos devem ser revistos para refletir o uso informativo do site, limites de responsabilidade e propriedade intelectual."
-  }
-};
 
 function escapeHtml(value: unknown): string {
   return String(value)
@@ -200,11 +180,6 @@ function renderFooter(p: Profile): string {
           <a href="livro.html">Livro</a>
           <a href="marcacao.html">Marcar consulta</a>
         </nav>
-        <div class="legal-links">
-          <a href="privacidade.html">Política de Privacidade</a>
-          <a href="cookies.html">Política de Cookies</a>
-          <a href="termos.html">Termos de Utilização</a>
-        </div>
       </div>
       <div class="container copyright">© 2026 Dra. Inês Sapinho. Todos os direitos reservados.</div>
     </footer>
@@ -365,7 +340,6 @@ function renderHome(p: Profile): string {
             <p class="hero-lead">${escapeHtml(p.tagline)}</p>
             <p>${escapeHtml(p.intro)}</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="marcacao.html">Marcar consulta</a>
               <a class="button button-secondary" href="sobre.html">Conhecer percurso clínico</a>
             </div>
             ${renderAppointmentPanel(p)}
@@ -765,36 +739,4 @@ export function renderSitePages(p: Profile = profile): Record<string, string> {
 
 export function renderPage(p: Profile = profile): string {
   return renderHome(p);
-}
-
-export function renderLegalPage(page: LegalKey, p: Profile = profile): string {
-  const content = legalPages[page];
-  return `<!doctype html>
-<html lang="pt-PT">
-  <head>
-    ${renderHead(content.title, content.text, p)}
-    <meta name="robots" content="noindex">
-  </head>
-  <body class="page-shell">
-    <a class="skip-link" href="#main">Saltar para o conteúdo</a>
-    ${renderTopbar(p)}
-    ${renderHeader("home", p)}
-    <main id="main" class="page-transition">
-      ${renderPageHero({
-        kicker: "Legal",
-        title: content.title,
-        text: content.text
-      })}
-      <section class="section">
-        <div class="container narrow copy-stack">
-          <p>${escapeHtml(p.medicalDisclaimer)}</p>
-          <a class="button button-secondary" href="index.html">Voltar ao site</a>
-        </div>
-      </section>
-    </main>
-    ${renderFooter(p)}
-    <script src="script.js" defer></script>
-  </body>
-</html>
-`;
 }

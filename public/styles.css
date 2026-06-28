@@ -980,7 +980,7 @@ p {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: minmax(240px, 0.52fr) minmax(170px, 0.24fr) minmax(190px, 0.24fr);
+  grid-template-columns: minmax(240px, 0.72fr) minmax(170px, 0.28fr);
   gap: 34px;
 }
 
@@ -997,8 +997,7 @@ p {
   max-width: 540px;
 }
 
-.site-footer nav,
-.legal-links {
+.site-footer nav {
   display: flex;
   flex-direction: column;
   gap: 9px;
